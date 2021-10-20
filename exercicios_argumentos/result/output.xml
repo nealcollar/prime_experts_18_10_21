@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.7 on win32)" generated="20211019 21:14:50.903" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Exercicio Argumentos" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests\exercicio_argumentos.robot">
+<test id="s1-s1-t1" name="Criando email personalizado">
+<kw name="formando o email" library="resource">
+<var>${retorno}</var>
+<arg>Augusto</arg>
+<arg>Vieira</arg>
+<arg>12</arg>
+<msg timestamp="20211019 21:14:50.962" level="TRACE">Arguments: [ ${nome}='Augusto' | ${sobrenome}='Vieira' | ${idade}='12' ]</msg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${email}</var>
+<arg>${nome}+'_'+${sobrenome}+'_'+${idade}+'@robot.com'</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211019 21:14:50.962" level="TRACE">Arguments: [ "Augusto+'_'+Vieira+'_'+12+'@robot.com'" ]</msg>
+<msg timestamp="20211019 21:14:50.966" level="FAIL">Evaluating expression 'Augusto+'_'+Vieira+'_'+12+'@robot.com'' failed: NameError: name 'Augusto' is not defined nor importable as module</msg>
+<msg timestamp="20211019 21:14:50.966" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" starttime="20211019 21:14:50.962" endtime="20211019 21:14:50.966"/>
+</kw>
+<status status="FAIL" starttime="20211019 21:14:50.961" endtime="20211019 21:14:50.967"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>criando por argumentos padrao: \n${retorno}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211019 21:14:50.967" endtime="20211019 21:14:50.967"/>
+</kw>
+<kw name="formando o email embutido augusto vieira 12" library="resource" sourcename="formando o email embutido ${nome} ${sobrenome} ${idade}">
+<var>${retorno}</var>
+<status status="NOT RUN" starttime="20211019 21:14:50.968" endtime="20211019 21:14:50.968"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>criado por argumentos embutidos: \n${retorno}\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20211019 21:14:50.968" endtime="20211019 21:14:50.968"/>
+</kw>
+<doc>deve criar um email apartir dos dados que fornecemos</doc>
+<tag>argumentos_1</tag>
+<status status="FAIL" starttime="20211019 21:14:50.961" endtime="20211019 21:14:50.969">Evaluating expression 'Augusto+'_'+Vieira+'_'+12+'@robot.com'' failed: NameError: name 'Augusto' is not defined nor importable as module</status>
+</test>
+<status status="FAIL" starttime="20211019 21:14:50.936" endtime="20211019 21:14:50.970"/>
+</suite>
+<status status="FAIL" starttime="20211019 21:14:50.904" endtime="20211019 21:14:50.973"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">argumentos_1</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Exercicio Argumentos">Tests.Exercicio Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

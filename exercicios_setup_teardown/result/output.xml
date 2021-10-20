@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.7 on win32)" generated="20211020 18:46:47.352" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Test Setup Teardown" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests\test_setup_teardown.robot">
+<kw name="Minha suite setup" library="setup_teardown" type="SETUP">
+<msg timestamp="20211020 18:46:47.379" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou executnado antes da suite do teste!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 18:46:47.379" level="TRACE">Arguments: [ '\nEstou executnado antes da suite do teste!\n' ]</msg>
+<msg timestamp="20211020 18:46:47.379" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.379" endtime="20211020 18:46:47.379"/>
+</kw>
+<msg timestamp="20211020 18:46:47.380" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.379" endtime="20211020 18:46:47.380"/>
+</kw>
+<test id="s1-s1-t1" name="Teste para suite e Teardown">
+<kw name="Meu setup do teste 1" library="setup_teardown" type="SETUP">
+<msg timestamp="20211020 18:46:47.380" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou executando meu setup de teste 1 \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 18:46:47.380" level="TRACE">Arguments: [ '\nEstou executando meu setup de teste 1 \n' ]</msg>
+<msg timestamp="20211020 18:46:47.381" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.380" endtime="20211020 18:46:47.381"/>
+</kw>
+<msg timestamp="20211020 18:46:47.381" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.380" endtime="20211020 18:46:47.381"/>
+</kw>
+<kw name="executando meu teste" library="setup_teardown">
+<msg timestamp="20211020 18:46:47.381" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou executando meu teste !!!!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 18:46:47.381" level="TRACE">Arguments: [ '\nEstou executando meu teste !!!!\n' ]</msg>
+<msg timestamp="20211020 18:46:47.382" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.381" endtime="20211020 18:46:47.382"/>
+</kw>
+<msg timestamp="20211020 18:46:47.382" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.381" endtime="20211020 18:46:47.382"/>
+</kw>
+<kw name="Meu teardown do teste 1" library="setup_teardown" type="TEARDOWN">
+<msg timestamp="20211020 18:46:47.383" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou executando meu teardown de teste 1 \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 18:46:47.383" level="TRACE">Arguments: [ '\nEstou executando meu teardown de teste 1 \n' ]</msg>
+<msg timestamp="20211020 18:46:47.383" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.383" endtime="20211020 18:46:47.383"/>
+</kw>
+<msg timestamp="20211020 18:46:47.384" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.382" endtime="20211020 18:46:47.384"/>
+</kw>
+<doc>Teste de como funciona meus setups e teardowns</doc>
+<tag>exemp_1</tag>
+<tag>suite_teardown_test</tag>
+<status status="PASS" starttime="20211020 18:46:47.380" endtime="20211020 18:46:47.384"/>
+</test>
+<kw name="Minha suite teardown" library="setup_teardown" type="TEARDOWN">
+<msg timestamp="20211020 18:46:47.385" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou executando apos todos os meus Testes \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211020 18:46:47.386" level="TRACE">Arguments: [ '\nEstou executando apos todos os meus Testes \n' ]</msg>
+<msg timestamp="20211020 18:46:47.386" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.385" endtime="20211020 18:46:47.386"/>
+</kw>
+<msg timestamp="20211020 18:46:47.386" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211020 18:46:47.385" endtime="20211020 18:46:47.386"/>
+</kw>
+<status status="PASS" starttime="20211020 18:46:47.375" endtime="20211020 18:46:47.386"/>
+</suite>
+<status status="PASS" starttime="20211020 18:46:47.354" endtime="20211020 18:46:47.387"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">exemp_1</stat>
+<stat pass="1" fail="0" skip="0">suite_teardown_test</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Setup Teardown">Tests.Test Setup Teardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

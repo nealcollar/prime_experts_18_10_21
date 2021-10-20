@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.7 on win32)" generated="20211019 21:46:45.171" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests">
+<suite id="s1-s1" name="Exercicio For" source="C:\Projects\Prime\PrimeExperts_18_10_21\prime_experts_18_10_21\tests\exercicio_for.robot">
+<test id="s1-s1-t1" name="Imprimindo paises">
+<kw name="contando de paises" library="resource">
+<arg>@{Paises}</arg>
+<doc>criando funcao de imprimir paises</doc>
+<msg timestamp="20211019 21:46:45.210" level="TRACE">Arguments: [ @{lista_paises}=['Brasil', 'USA', 'Africa', 'Argentina', 'Italia'] ]</msg>
+<for flavor="IN">
+<var>${pais}</var>
+<value>@{lista_paises}</value>
+<iter>
+<var name="${pais}">Brasil</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou no pais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211019 21:46:45.210" level="TRACE">Arguments: [ '\nEstou no pais: Brasil' ]</msg>
+<msg timestamp="20211019 21:46:45.211" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.210" endtime="20211019 21:46:45.211"/>
+</kw>
+<status status="PASS" starttime="20211019 21:46:45.210" endtime="20211019 21:46:45.211"/>
+</iter>
+<iter>
+<var name="${pais}">USA</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou no pais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211019 21:46:45.211" level="TRACE">Arguments: [ '\nEstou no pais: USA' ]</msg>
+<msg timestamp="20211019 21:46:45.211" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.211" endtime="20211019 21:46:45.211"/>
+</kw>
+<status status="PASS" starttime="20211019 21:46:45.211" endtime="20211019 21:46:45.211"/>
+</iter>
+<iter>
+<var name="${pais}">Africa</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou no pais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211019 21:46:45.211" level="TRACE">Arguments: [ '\nEstou no pais: Africa' ]</msg>
+<msg timestamp="20211019 21:46:45.212" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.211" endtime="20211019 21:46:45.212"/>
+</kw>
+<status status="PASS" starttime="20211019 21:46:45.211" endtime="20211019 21:46:45.212"/>
+</iter>
+<iter>
+<var name="${pais}">Argentina</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou no pais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211019 21:46:45.212" level="TRACE">Arguments: [ '\nEstou no pais: Argentina' ]</msg>
+<msg timestamp="20211019 21:46:45.212" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.212" endtime="20211019 21:46:45.212"/>
+</kw>
+<status status="PASS" starttime="20211019 21:46:45.212" endtime="20211019 21:46:45.212"/>
+</iter>
+<iter>
+<var name="${pais}">Italia</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\nEstou no pais: ${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211019 21:46:45.212" level="TRACE">Arguments: [ '\nEstou no pais: Italia' ]</msg>
+<msg timestamp="20211019 21:46:45.213" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.212" endtime="20211019 21:46:45.213"/>
+</kw>
+<status status="PASS" starttime="20211019 21:46:45.212" endtime="20211019 21:46:45.213"/>
+</iter>
+<status status="PASS" starttime="20211019 21:46:45.210" endtime="20211019 21:46:45.213"/>
+</for>
+<msg timestamp="20211019 21:46:45.213" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 21:46:45.209" endtime="20211019 21:46:45.213"/>
+</kw>
+<doc>deve imprimir a lista de paises um a um</doc>
+<tag>imprime_paises</tag>
+<status status="PASS" starttime="20211019 21:46:45.209" endtime="20211019 21:46:45.213"/>
+</test>
+<status status="PASS" starttime="20211019 21:46:45.196" endtime="20211019 21:46:45.214"/>
+</suite>
+<status status="PASS" starttime="20211019 21:46:45.172" endtime="20211019 21:46:45.215"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">imprime_paises</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Exercicio For">Tests.Exercicio For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
